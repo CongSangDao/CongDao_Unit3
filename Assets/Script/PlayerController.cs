@@ -7,6 +7,8 @@ public class PlayerController : MonoBehaviour
     private Rigidbody rbPlayer;
     public float gravityModifier;
     public float jumForce;
+    private bool onGround = true;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,9 +21,16 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
       bool spaceDown = Input.GetKeyDown(KeyCode.Space);
-        if (spaceDown)
+        if (spaceDown && onGround)
         {
+            //jumd code
             rbPlayer.AddForce(Vector3.up * jumForce, ForceMode.Impulse);
+            onGround= false;
         }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        onGround= true;
     }
 }
