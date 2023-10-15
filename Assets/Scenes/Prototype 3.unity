@@ -464,7 +464,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 912207700}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.8387647, y: -0.02, z: -1.24}
+  m_LocalPosition: {x: -2.8387647, y: 2.12, z: -0.38}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -487,8 +487,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1.8112632, z: 1}
-  m_Center: {x: 0, y: 1.0018749, z: 0}
+  m_Size: {x: 1.4626763, y: 2.864339, z: 1}
+  m_Center: {x: -0.01881954, y: 1.5284129, z: 0}
 --- !u!54 &1436430457
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -504,7 +504,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!114 &1436430458
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -736,6 +736,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 882e87ba7c26a9d47a4f001002357e94, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: 882e87ba7c26a9d47a4f001002357e94, type: 3}
+      propertyPath: m_ApplyRootMotion
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
